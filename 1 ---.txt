@@ -1,0 +1,90 @@
+  1 ---
+  2 - name: configure repo
+  3   hosts: all
+  4   become: true
+  5   tasks:
+  6     - name: task1
+  7       ansible.builtin.yum_repository:
+  8         name: baseos
+  9         description: "BaseOS Description"
+ 10         baseurl: http://content/rhel9.0/x86_64/dvd/BaseOS
+ 11         gpgcheck: true
+ 12         gpgkey: http://content.example.com/rhel9.0/x86_64/dvd/RPM-GPG-KEY-redhat-release
+ 13         enabled: true
+ 14    
+ 151  1 ---      
+  2 - name: configure repo
+  3   hosts: all
+  4   tasks: 
+  5     - name: task1
+  6       ansible.builtin.yum_repository:
+  7         name: baseos
+  8         description: "Base OS Description"
+  9         baseurl: http://content/rhel9.0/x86_64/dvd/BaseOS
+ 10         gpgcheck: true
+ 11         gpgkey: http://content.example.com/rhel9.0/x86_64/dvd/RPM-GPG-KEY-redhat-release
+ 12         enabled: true
+ 13          
+ 14     - name: task2
+ 15       ansible.builtin.yum_repository:
+ 16         name: AppStream
+ 17         description: "AppStream Description"
+ 18         baseurl: http://content/rhel9.0/x86_64/dvd/AppStream
+ 19         gpgcheck: true
+ 20         gpgkey: http://content.example.com/rhel9.0/x86_64/dvd/RPM-GPG-KEY-redhat-release
+ 21         enabled: true
+
+
+
+
+
+http://content.example.com/rhexam/ex294/materials/role1.tar.gz
+
+http://content.example.com/rhexam/ex294/materials/role2.tar.gz
+
+
+
+
+
+
+
+My Self shaik Saleem I am from AP
+Currently I am working with FICO 
+I am having 5 years of experience
+I am working as a Linux System Administrator
+My referral was vineeth
+
+
+
+uma - 7842608568 - American Air Lines
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
